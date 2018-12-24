@@ -1,0 +1,108 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gift store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <img src="logo.png" alt="company-logo">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">iPhones</a></li>
+            <li><a href="">Tablets</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <section class="section-1">
+        <div class="left">
+           <h1>
+               Get Moshood<br>
+               that timeless<br>
+               gift!
+           </h1>
+            <p>
+                Purchase timeless gifts for your loved<br> ones 
+                from the christmas store. We<br> make sure they
+                both the<br> gifts and moments we create
+                for as<br> long as possible.
+            </p>
+
+            <button class="button">
+                SEE MORE
+            </button>
+        </div>
+
+        <div class="right">
+            <img src="1-watch.gif" alt="wrist-watch">
+        </div>
+    </section>
+    
+    <section class="section-2">
+       
+        <div class="left">
+            <img src="2-iphone-list.png" alt="list">
+        </div>
+        
+        <div class="right">
+            <h2>
+                Be somebody's<br>
+                Santa this<br> season.
+                Make<br> one or all<br>
+                their wishes<br> come
+                true.<br> It takes a<br>
+                second to<br> make<br>
+                memories, it<br> takes
+                a life<br> time to forget<br>
+                them.          
+            </h2>
+            
+            <button class="button">
+                WRITE US
+            </button>
+        </div>
+        
+    </section>
+    
+    <section class="section-3">
+       <div>
+          
+           <div class="left" id="form">
+                <h2>
+                    Please write us<br>
+                    and lets know<br>
+                    what your<br> heart
+                    desires<br> are.
+                </h2>
+
+                <input type="email" placeholder="Email" aria-required="true">
+
+                <textarea name="text" id="" cols="30" rows="10" placeholder="tell us what you want..." required></textarea>
+
+                <button class="button" onclick="sendform()">SEND</button>
+           </div>
+           
+           <h3  class="nodisplay" id="feedback">Thank you<br> so much!<br> we've<br> received<br> your<br> message.<br> We'll reach<br> out to you<br> as soon as<br> possible</h3>
+           
+        </div>   
+
+       <div class="right">
+           <img src="3-ipad.png" alt="ipad">
+       </div>
+        
+    </section>
+    
+    <script>
+      const form = document.getElementById("form");
+      const feedback = document.getElementById("feedback");
+        
+        function sendform () {
+          form.style.display = "none";
+          feedback.classList.remove("nodisplay");
+        }
+    </script>
+    
+</body>
+</html>

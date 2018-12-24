@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #444;
+    color: #fff;
+    padding-top: 1em;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0 4em 0;
+}
+
+
+nav img {
+    height: 3vh;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    margin-right: 2em;
+}
+
+ul a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'source sans pro';
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 100;
+}
+
+ul a:hover {
+    text-decoration: line-through;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.section-1 h1 {
+    font-size: 3em;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    line-height: 1.0;
+    margin-bottom: .6em;
+}
+
+.section-1 p {
+    font-family: 'source sans pro';
+    line-height: 1.5;
+    font-size: .9em;
+    letter-spacing: .2em;
+    margin-bottom: 3em;
+}
+
+.button {
+    background-color: rgb(253, 198, 21);    
+    color: #000;
+    border: none;
+    padding: 1em 3em;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-family: 'source sans pro';
+    font-weight: 700;
+    letter-spacing: .2em;
+}
+
+.section-1 .button {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+    
+    50% {
+        top: 1em;
+    }
+    
+    100% {
+        top: 0;
+    }
+}
+
+.section-1 img {
+    width: 35vw;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2 img {
+    width: 30vw;
+    margin-top: 25vh;
+}
+
+.section-2 h2 {
+    font-size: 3em;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    line-height: 1.0;
+    margin-bottom: .6em;
+}
+
+
+.section-2 .button {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+.section-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.section-3 h2 {
+    font-size: 1.7em;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: .6em;   
+    letter-spacing: .1em;
+}
+
+.section-3 img {
+    width: 41vw;
+    position: relative;
+    top: -25;
+    animation-name: bounce2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.section-3 h3 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: .6em;   
+    letter-spacing: .1em;
+}
+
+.nodisplay {
+    display: none
+}
+
+.section-3 input {
+    background-color: transparent;
+    padding: 1em 0 1em 1em;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-bottom: 2em;
+    
+}
+
+.section-3 textarea {
+    background-color: transparent;
+    padding: 1em 0 1em 1em;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-bottom: 2em;
+    
+}
+
+@keyframes bounce2 {
+    0% {
+        top: -25;
+    }
+    
+    50% {
+        top: -5;
+    }
+    
+    100% {
+        top: -25;
+    }
+}
+
+
